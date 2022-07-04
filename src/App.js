@@ -32,7 +32,7 @@ const App = () => {
 
   const addExpenseHandler = expense=>
   {
-    const addedExpensesObj = [...expenses, expense]
+    const addedExpensesObj = [expense,...expenses] 
     console.log(addedExpensesObj)
     setAddedxpenses(addedExpensesObj)
   }

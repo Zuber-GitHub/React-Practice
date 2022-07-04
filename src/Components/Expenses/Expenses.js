@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-
+import ExpensesChart from './ExpensesChart';
 
 
 import ExpenseItem from './ExpenseItem';
@@ -55,6 +55,7 @@ import ExpenseFilter from './ExpenseFilter';
       
       
       <ExpenseFilter selected={filteredYear} onChangeFilter={filterChangeHandeler}></ExpenseFilter>
+      <ExpensesChart expenses={filteredExpenses}></ExpensesChart>
       {expensesContent}
       {/* <ExpenseItem
         title={props.items[0].title}
